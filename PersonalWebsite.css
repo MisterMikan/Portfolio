@@ -1,0 +1,277 @@
+body {
+    background: url('BackgroundTemplate.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+
+}
+
+/* ----- NAVIGATIONS ------------------------------------------------------------------------------------------------------ */
+
+.navigations {
+    margin: 20px;
+    gap: 500px;
+}
+
+.Home {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: #0d0d0d;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    
+}
+
+.Home:hover {
+   background: #45a049;
+   transform: scale(1.1);
+}
+
+.About {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: #0d0d0d;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.About:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+.Services {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: #0d0d0d;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.Services:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+.Contact {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: #0d0d0d;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.Contact:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* ----- HEADERS ------------------------------------------------------------------------------------------------------------- */
+
+header h1 {
+    font-size: 32px;
+    color: whitesmoke;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+ }
+}
+
+.title {
+    font-size: larger;
+    position: relative;
+    top: -20px;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+    
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+ }    
+}
+
+.top-header {
+    background: linear-gradient();
+    background-color: black;
+    padding: 20px;
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transform: translateY(-50px);
+    animation: slideDown 1s ease forwards;
+
+}   
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translate(0);
+ }
+}
+
+.bottom-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    transform: translateY(-50px);
+    animation: slideDown 1s ease forwards;
+
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translate(0);
+ }
+}
+
+/* ----- IMAGES -------------------------------------------------------------------------------------------------------------------------- */
+
+.gmail-image:hover {
+    transform: scale(1.1);
+
+}
+
+.facebook-image:hover {
+    transform: scale(1.1);
+
+}
+
+.instagram-image:hover {
+    transform: scale(1.1);
+
+}
+
+.github-image:hover {
+    transform: scale(1.1);
+
+}
+
+.profile-image {
+    margin-left: 500px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 1.2s ease forwards;
+    
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+ }
+}
+
+/* ----- PARAGRAPHS ----------------------------------------------------------------------------------------------------------------------- */
+
+.paragraph-1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideLeft 1s ease forwards;
+
+}
+
+@keyframes slideLeft {
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+ }
+}
+
+.paragraph-2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+ }
+}
+
+/* ----- FOOTER ---------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+ }
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
