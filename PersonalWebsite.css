@@ -8,18 +8,64 @@ body {
 /* ----- NAVIGATIONS ------------------------------------------------------------------------------------------------------ */
 
 .navigations {
-    margin: 20px;
-    gap: 500px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    z-index: 1000;
+
+}
+
+.navigations a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.navigations a:hover {
+    background: #575757;
+}
+
+.navigations .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: whitesmoke;
+    padding: 10px 16px;
+    border: none;
+
+}
+
+#main {
+    transition: margin-left 0.4s;
+    padding: 20px;
 }
 
 .Home {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: whitesmoke;
     display: inline-block;
     padding: 12px 24px;
-    border: 2px solid #000;
-    border-radius: 6px;
+    border: 1px solid #000;
     background-color: #0d0d0d;
     text-decoration: none;
     position: relative;
