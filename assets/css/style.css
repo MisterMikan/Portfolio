@@ -538,6 +538,10 @@ section h2::after {
   font-weight: 500;
 }
 
+.form-group label span {
+  color: rgb(255, 0, 0);
+}
+
 .form-group input,
 .form-group textarea {
   width: 100%;
