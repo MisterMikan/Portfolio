@@ -5,109 +5,327 @@
     <link rel="icon" type="image/png" href="./assets/images/newfavicon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Welcome</title>
+    <title>Michaelangelo Mozo - Software Engineer Portfolio</title>
   </head>
 
   <body>
-    <header>
-      <div class="top-header">
-        <h1 style="color: whitesmoke">PORTFOLIO</h1>
-        <nav>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </nav>
-      </div>
-
-      <div class="bottom-header">
-        <a href="mailto:michaelmozo2003@gmail.com">
-          <img src="./assets/images/Gmail.png" alt="Gmail" class="gmail-image" />
-        </a>
-
-        <a href="https://www.facebook.com/michaelangelo.mozo/">
-          <img src="./assets/images/Facebook_Logo.png" alt="Facebook" class="facebook-image" />
-        </a>
-
-        <a href="https://www.instagram.com/sho.kakuu_/">
-          <img src="./assets/images/Instagram.png" alt="Instagram" class="instagram-image" />
-        </a>
-
-        <a href="https://github.com/MisterMikan">
-          <img src="./assets/images/GitHub.png" alt="GitHub" class="github-image" />
-        </a>
+    <!-- Header with Logo and Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>MM</h1>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#hero" data-target="hero">Home</a></li>
+              <li><a href="#about" data-target="about">About</a></li>
+              <li><a href="#projects" data-target="projects">Projects</a></li>
+              <li><a href="#contact" data-target="contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
 
-    <div id="myNavigations" class="navigations">
-      <span class="closebtn" onclick="closeNav()">&times;</span>
-      <a href="http://127.0.0.1:5500/Portfolio.html" class="Home"><b>Home</b></a>
-      <a href="#about" class="About"><b>About</b></a>
-      <a href="#experience" class="Experience"><b>Experience</b></a>
-      <a href="#contact" class="Contact"><b>Contact</b></a>
-    </div>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#hero" data-target="hero">Home</a></li>
+        <li><a href="#about" data-target="about">About</a></li>
+        <li><a href="#projects" data-target="projects">Projects</a></li>
+        <li><a href="#contact" data-target="contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Menu</button>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Michaelangelo R. Mozo</h1>
+            <h2>Software Engineer & Computer Science Student</h2>
+            <p>
+              Passionate about creating efficient, scalable solutions with
+              modern technologies
+            </p>
+            <a href="#projects" class="cta-button" data-target="projects"
+              >View My Projects</a
+            >
+          </div>
+          <div class="hero-image">
+            <img
+              src="./assets/images/Profile.jpg"
+              alt="Michaelangelo Mozo"
+              class="profile-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <img src="./assets/images/Profile.jpg" alt="Profile" class="profile-image" />
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Greetings! I'm a 22-year-old Filipino student-programmer from
+              Mandaue City, Cebu, currently studying Computer Science at
+              National University Cebu. I'm passionate about technology and
+              enjoy solving complex problems through innovative programming
+              solutions.
+            </p>
+            <p>
+              I'm known for being calm, approachable, and collaborative. I love
+              working on future projects that challenge my critical thinking and
+              problem-solving abilities while contributing to meaningful
+              technological advancements.
+            </p>
+          </div>
+          <div class="skills-section">
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+              <li>Java</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>HTML5 & CSS3</li>
+              <li>Problem Solving</li>
+              <li>Software Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="interests">
+          <h3>Interests & Hobbies</h3>
+          <ul class="interests-list">
+            <li>
+              <strong>Music:</strong> Pop-punk, Japanese city-pop, and metal
+            </li>
+            <li><strong>Cooking:</strong> Especially spicy foods</li>
+            <li>
+              <strong>Coding:</strong> Personal projects during spare time
+            </li>
+            <li><strong>Traveling:</strong> Exploring my province area</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <section id="about">
-        <p style="color: whitesmoke" class="paragraph-1"><b>About Me:</b></p>
-      </section>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/images/internet_image.png"
+                alt="Portfolio Website"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>
+                A responsive personal portfolio website built with HTML5, CSS3,
+                and vanilla JavaScript featuring modern design and smooth
+                animations.
+              </p>
+              <div class="project-technologies">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
 
-    <p style="color: whitesmoke" class="paragraph-2">
-      Greetings! My name is <b>Michaelangelo R. Mozo</b>. I am a <b>22</b> yrs. old <b>Filipino</b> student-programmer,
-      currently residing in the city of <b>Mandaue City, Cebu</b>. I am now studying at
-      <b>National University Cebu</b> (NU-Cebu) with my course program; <b>Computer Science</b>. Here are some of my
-      <b>hobbies</b>:<br /><br />
-      1.) <b>Music</b> (especially pop-punk, japanese city-pop, and metal)<br /><br />
-      2.) <b>Cooking</b> (prefer spicy foods)<br /><br />
-      3.) <b>Coding</b> (during spare times)<br /><br />
-      4.) <b>Traveling</b> (mostly at my province area)<br /><br />
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./assets/images/GitHub.png" alt="Java Application" />
+            </div>
+            <div class="project-content">
+              <h3>Java Application</h3>
+              <p>
+                A comprehensive Java application demonstrating object-oriented
+                programming principles and efficient algorithm implementation.
+              </p>
+              <div class="project-technologies">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Algorithms</span>
+              </div>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
 
-      More importantly, I am a very <b>calm</b> and <b>easy-to-approach</b> person. I love to cooperate with
-      <b>future projects</b> that can also assist me in <b>nurturing</b> my skills in critical thinking and solving
-      problems. Also, I am very
-      <b>flexible</b>
-      in working with the <b>Java</b>, and <b>C++</b> langauge. Not just that, but also <b>scripting languages</b> such
-      as <b>JavaScript</b>. I hope to work with you in the near future with <b>outstanding performance</b> and
-      <b>excellent projects</b>.
-    </p>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./assets/images/OCCA_Logo.png" alt="C++ Project" />
+            </div>
+            <div class="project-content">
+              <h3>C++ System</h3>
+              <p>
+                A high-performance system application built in C++ focusing on
+                memory optimization and computational efficiency.
+              </p>
+              <div class="project-technologies">
+                <span>C++</span>
+                <span>Performance</span>
+                <span>Optimization</span>
+              </div>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <section id="experience">
-        <p style="color: whitesmoke" class="paragraph-3"><b>Experience</b></p>
-      </section>
-    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="experience-logo">
+              <img src="./assets/images/OCCA_Logo.png" alt="OneCodeCamp Asia" />
+            </div>
+            <div class="experience-content">
+              <h3>OneCodeCamp Asia</h3>
+              <p class="position">Online Course Participant</p>
+              <p class="description">
+                Participated in intensive coding bootcamp focused on modern
+                software development practices and industry-standard programming
+                techniques.
+              </p>
+            </div>
+          </div>
 
-    <p style="color: whitesmoke" class="paragraph-4">
-      <img src="./assets/images/OCCA_Logo.png" alt="OCCALOGO" class="occa-image" />
-      <b>OneCodeCamp Asia</b> - online-course participant<br /><br />
-      <img src="./assets/images/NU_logo.png" alt="NULOGO" class="nu-image" />
-      <b>Computer Science Organization (NU)</b> - member
-    </p>
+          <div class="experience-item">
+            <div class="experience-logo">
+              <img
+                src="./assets/images/NU_logo.png"
+                alt="National University"
+              />
+            </div>
+            <div class="experience-content">
+              <h3>Computer Science Organization (NU)</h3>
+              <p class="position">Active Member</p>
+              <p class="description">
+                Collaborative member in the Computer Science Organization,
+                participating in coding competitions, workshops, and tech
+                community events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <section id="contact">
-        <p style="color: whitesmoke" class="paragraph-7"><b>Contact</b></p>
-      </section>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <img
+                src="./assets/images/mobile_contact.png"
+                alt="Phone"
+                class="contact-icon"
+              />
+              <div class="contact-details">
+                <strong>Phone:</strong>
+                <p>0991-358-3081 | 0976-056-8958</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img
+                src="./assets/images/internet_image.png"
+                alt="Email"
+                class="contact-icon"
+              />
+              <div class="contact-details">
+                <strong>Email:</strong>
+                <p>michaelmozo2003@gmail.com</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <h3>Connect With Me</h3>
+              <div class="social-icons">
+                <a href="mailto:michaelmozo2003@gmail.com" title="Email">
+                  <img src="./assets/images/Gmail.png" alt="Gmail" />
+                </a>
+                <a
+                  href="https://github.com/MisterMikan"
+                  title="GitHub"
+                  target="_blank"
+                >
+                  <img src="./assets/images/GitHub.png" alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.facebook.com/michaelangelo.mozo/"
+                  title="Facebook"
+                  target="_blank"
+                >
+                  <img src="./assets/images/Facebook_Logo.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://www.instagram.com/sho.kakuu_/"
+                  title="Instagram"
+                  target="_blank"
+                >
+                  <img src="./assets/images/Instagram.png" alt="Instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <p style="color: whitesmoke" class="paragraph-8">
-      <img src="./assets/images/mobile_contact.png" alt="Mobile" class="mobile-image" />
-      : <b>0991-358-3081</b> | <b>0976-056-8958</b><br /><br />
-      <img src="./assets/images/internet_image.png" alt="Internet" class="internet-image" />
-      : <b>michaelmozo2003@gmail.com</b>
-    </p>
+          <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 PORTFOLIO</p>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Michaelangelo Mozo. All rights reserved.</p>
+          <p>Built with ❤️ using HTML5, CSS3 & JavaScript</p>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/script/script.js"></script>
